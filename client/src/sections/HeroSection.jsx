@@ -49,7 +49,7 @@ export default function HeroSection({ content, onStart }) {
           onClick={onStart}
           className="btn-primary text-lg"
         >
-          Начать путешествие →
+          Начать →
         </motion.button>
 
         <div className="flex justify-center">
