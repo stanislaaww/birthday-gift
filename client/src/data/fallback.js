@@ -5,7 +5,7 @@ export const fallbackContent = {
   girlName: '[ИМЯ]',
   relationshipStart: '[ДАТА]', // формат YYYY-MM-DD, например '2023-06-15'
 
-  heroTitle: 'С Днём Рождения ❤️',
+  heroTitle: 'С Днём Рождения Нася',
   heroSubtitle: 'У меня для тебя есть маленькое путешествие',
 
   photos: [
