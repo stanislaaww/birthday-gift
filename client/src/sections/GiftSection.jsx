@@ -119,7 +119,7 @@ export default function GiftSection({ content }) {
                 transition={{ delay: 0.4, duration: 0.7 }}
                 className="font-serif text-4xl md:text-6xl gradient-text-shine font-semibold mb-10"
               >
-                Мы идём на концерт ✨
+                Надеюсь понравиться ✨
               </motion.h2>
 
               {/* БИЛЕТ */}
