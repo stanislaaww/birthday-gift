@@ -36,7 +36,7 @@ export const fallbackContent = {
   ],
 
   message:
-    'Я очень рад, что знаком с тобой.\nБудь такой же яркой и веселой.\nВнизу есть еще 1 подарок.',
+    'Я очень рад, что знаком с тобой.\nБудь такой же яркой и веселой.\nТеперь точно мой старшак.\nВнизу есть еще 1 подарок.',
 
   videoLink: 'https://www.youtube.com/watch?v=m2-A-kbEDa8', // YouTube embed URL или путь '/video/video.mp4'
   videoTitle: 'Видео для тебя',
