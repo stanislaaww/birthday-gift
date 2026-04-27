@@ -52,9 +52,7 @@ export default function HeroSection({ content, onStart }) {
           Начать →
         </motion.button>
 
-        <div className="flex justify-center">
-          <DaysCounter startDate={content.relationshipStart} />
-        </div>
+        
 
         {/* Стрелка-намёк скролла */}
         <motion.div
