@@ -11,33 +11,27 @@ export const fallbackContent = {
   photos: [
     {
       src: '/photos/photo1.jpg',
-      text: 'Наше первое фото вместе.\nЯ тогда понял, что ты особенная',
-      caption: 'Начало'
+      caption: 'C'
     },
     {
       src: '/photos/photo2.jpg',
-      text: 'Этот день был одним из самых счастливых',
-      caption: 'Счастье'
+      caption: 'днем'
     },
     {
       src: '/photos/photo3.jpg',
-      text: 'С тобой даже обычные моменты\nстановятся особенными',
-      caption: 'Магия'
+      caption: 'Рождения'
     },
     {
       src: '/photos/photo4.jpg',
-      text: 'Каждая улыбка с тобой\nостаётся со мной навсегда',
-      caption: 'Тепло'
+      caption: 'Тебя'
     },
     {
       src: '/photos/photo5.jpg',
-      text: 'С тобой я научился\nценить маленькие радости',
-      caption: 'Вместе'
+      caption: 'Дорогая'
     },
     {
       src: '/photos/photo6.jpg',
-      text: 'Ты — моя любимая часть\nкаждого дня',
-      caption: 'Любовь'
+      caption: 'Настя'
     }
   ],
 
