@@ -171,9 +171,9 @@ export default function GiftSection({ content }) {
                     {/* Корешок */}
                     <div className="text-center flex flex-col justify-center items-center">
                       <div className="text-5xl mb-2 animate-pulse-soft">🎶</div>
-                      <div className="text-xs text-gray-500 uppercase tracking-widest">Admit</div>
-                      <div className="font-serif text-3xl gradient-text font-bold">2</div>
-                      <div className="text-xs text-gray-400 mt-1">для нас двоих</div>
+                      <div className="text-xs text-gray-500 uppercase tracking-widest"></div>
+                      <div className="font-serif text-3xl gradient-text font-bold"></div>
+                      <div className="text-xs text-gray-400 mt-1">хорошо проведи время</div>
                     </div>
                   </div>
 
