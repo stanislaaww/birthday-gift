@@ -11,12 +11,12 @@ export default function GallerySection({ photos = [] }) {
           transition={{ duration: 0.8 }}
           className="text-center mb-14"
         >
-          <p className="subtitle-script mb-2">воспоминания</p>
-          <h2 className="font-serif text-4xl md:text-5xl gradient-text font-semibold">
+          <h2 className="subtitle-script mb-2">Воспоминания с тобой</h2>
+          {/* <h2 className="font-serif text-4xl md:text-5xl gradient-text font-semibold">
             Наши моменты
-          </h2>
+          </h2> */}
           <p className="text-gray-500 mt-3 max-w-md mx-auto">
-            Наведи курсор на каждое фото — там спрятано маленькое сообщение 💜
+            Нажми на каждое фото — там спрятано маленькое сообщение 💜
           </p>
         </motion.div>
 
