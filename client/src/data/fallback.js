@@ -51,7 +51,7 @@ export const fallbackContent = {
     venue: 'Достык'
   },
 
-  finalMessage: 'Я надеюсь, тебе понравилось \nС Днём Рождения',
+  finalMessage: 'Надеюсь, тебе понравилось \nС Днём Рождения',
 
   musicSrc: '/music/music.mp3'
 };
