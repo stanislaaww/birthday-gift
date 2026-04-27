@@ -3,10 +3,10 @@
 
 export const fallbackContent = {
   girlName: 'Настя',
-  relationshipStart: '2022-06-16', // формат YYYY-MM-DD, например '2023-06-15'
+  
 
   heroTitle: 'С Днём Рождения Нася',
-  heroSubtitle: 'У меня для тебя есть маленькое ',
+  heroSubtitle: 'Хочу выразить свое поздравление в этом сайте ',
 
   photos: [
     {
@@ -47,7 +47,7 @@ export const fallbackContent = {
   videoLink: '', // YouTube embed URL или путь '/video/video.mp4'
   videoTitle: 'Видео для тебя',
 
-  giftIntro: 'У меня есть для тебя подарок',
+  giftIntro: 'Твой подарок',
   giftHint: 'Нажми, чтобы открыть',
 
   concertInfo: {
