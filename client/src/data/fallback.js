@@ -6,7 +6,7 @@ export const fallbackContent = {
   relationshipStart: '[ДАТА]', // формат YYYY-MM-DD, например '2023-06-15'
 
   heroTitle: 'С Днём Рождения Нася',
-  heroSubtitle: 'У меня для тебя есть маленькое путешествие',
+  heroSubtitle: 'Выражаю свое поздровление в этом сайте',
 
   photos: [
     {
