@@ -15,7 +15,7 @@ export const fallbackContent = {
     },
     {
       src: '/photos/photo2.jpg',
-      caption: 'Днем'
+      caption: 'днем'
     },
     {
       src: '/photos/photo3.jpg',
@@ -36,9 +36,9 @@ export const fallbackContent = {
   ],
 
   message:
-    'Я очень рад, что ты есть в моей жизни.\nТы делаешь каждый день ярче.\nИ сегодня я хочу сделать для тебя небольшой сюрприз.',
+    'Я очень рад, что знаком с тобой.\nБудь такой же яркой и веселой.\nВнизу есть еще 1 подарок.',
 
-  videoLink: '', // YouTube embed URL или путь '/video/video.mp4'
+  videoLink: 'https://www.youtube.com/watch?v=m2-A-kbEDa8', // YouTube embed URL или путь '/video/video.mp4'
   videoTitle: 'Видео для тебя',
 
   giftIntro: 'Твой подарок',
