@@ -2,11 +2,11 @@
 // Здесь же легко поменять контент без БД.
 
 export const fallbackContent = {
-  girlName: '[ИМЯ]',
-  relationshipStart: '[ДАТА]', // формат YYYY-MM-DD, например '2023-06-15'
+  girlName: 'Настя',
+  relationshipStart: '2022-06-16', // формат YYYY-MM-DD, например '2023-06-15'
 
   heroTitle: 'С Днём Рождения Нася',
-  heroSubtitle: 'Выражаю свое поздровление в этом сайте',
+  heroSubtitle: 'У меня для тебя есть маленькое ',
 
   photos: [
     {
@@ -51,10 +51,10 @@ export const fallbackContent = {
   giftHint: 'Нажми, чтобы открыть',
 
   concertInfo: {
-    band: '[НАЗВАНИЕ ГРУППЫ]',
-    date: '[ДАТА КОНЦЕРТА]',
-    city: '[ГОРОД]',
-    venue: '[МЕСТО ПРОВЕДЕНИЯ]'
+    band: 'Ne Prosto Orchestra Anime World',
+    date: '15.05.2026',
+    city: 'Алматы',
+    venue: 'Достык'
   },
 
   finalMessage: 'Я надеюсь, тебе понравится ❤️\nС Днём Рождения',
