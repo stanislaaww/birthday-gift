@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans text-gray-800 antialiased;
+  background: linear-gradient(135deg, #faf7ff 0%, #fff7f3 50%, #f3edff 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism — стеклянный эффект */
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 8px 32px rgba(160, 133, 240, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.glass-dark {
+  background: rgba(255, 247, 243, 0.65);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 191, 161, 0.4);
+}
+
+/* Градиентный текст */
+.gradient-text {
+  background: linear-gradient(135deg, #a085f0 0%, #ff8966 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-text-shine {
+  background: linear-gradient(
+    90deg,
+    #a085f0 0%,
+    #ff8966 25%,
+    #b89eff 50%,
+    #ffa07e 75%,
+    #a085f0 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+/* Кнопка с мягким glassmorphism */
+.btn-primary {
+  @apply relative px-8 py-3 rounded-full font-medium text-white;
+  background: linear-gradient(135deg, #a085f0 0%, #ff8966 100%);
+  box-shadow: 0 8px 24px rgba(160, 133, 240, 0.35);
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(255, 137, 102, 0.4);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-glass {
+  @apply px-6 py-2.5 rounded-full font-medium text-lavender-600;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(160, 133, 240, 0.25);
+  transition: all 0.3s ease;
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(160, 133, 240, 0.45);
+}
+
+/* Каждая секция занимает минимум полный экран */
+.section {
+  @apply min-h-screen w-full flex items-center justify-center px-4 py-16 md:py-24;
+}
+
+/* Курсивный subtitle */
+.subtitle-script {
+  @apply font-script text-2xl md:text-3xl text-lavender-500;
+}
+
+/* Сердечки и частицы */
+.particle {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Скрыть скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(160, 133, 240, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(160, 133, 240, 0.5);
+}
+
+/* Карточка фотографии */
+.photo-card {
+  @apply relative overflow-hidden rounded-2xl cursor-pointer;
+  aspect-ratio: 4 / 5;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.photo-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+.photo-card img {
+  @apply w-full h-full object-cover;
+  transition: transform 0.7s ease;
+}
+.photo-card:hover img {
+  transform: scale(1.08);
+}
+.photo-overlay {
+  @apply absolute inset-0 flex items-end p-5;
+  background: linear-gradient(
+    to top,
+    rgba(160, 133, 240, 0.85) 0%,
+    rgba(255, 137, 102, 0.55) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.photo-card:hover .photo-overlay {
+  opacity: 1;
+}
+
+/* Конверт-подарок */
+.envelope {
+  position: relative;
+  width: 320px;
+  height: 220px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .envelope {
+    width: 400px;
+    height: 270px;
+  }
+}
+
+.envelope-body {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #ffd8c4 0%, #e7dcff 100%);
+  border-radius: 12px;
+  box-shadow:
+    0 20px 60px rgba(160, 133, 240, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.envelope-flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(135deg, #d3c1ff 0%, #ffbfa1 100%);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: top;
+  transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 3;
+  box-shadow: 0 4px 12px rgba(160, 133, 240, 0.2);
+}
+.envelope.open .envelope-flap {
+  transform: rotateX(180deg);
+}
+
+.envelope-pocket {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(135deg, #ffbfa1 0%, #d3c1ff 100%);
+  border-radius: 0 0 12px 12px;
+  z-index: 4;
+  clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 100%, 0 100%);
+}
+
+.envelope-heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 32px;
+  filter: drop-shadow(0 2px 4px rgba(255, 137, 102, 0.4));
+}
+
+.ticket {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* Шум/зерно для премиальности */
+.noise::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

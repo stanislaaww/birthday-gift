@@ -1,0 +1,13 @@
+{
+  "name": "birthday-gift",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Romantic interactive birthday gift website",
+  "scripts": {
+    "install:all": "cd client && npm install && cd ../server && npm install",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd client && npm install && npm run build",
+    "seed": "cd server && npm run seed"
+  }
+}
