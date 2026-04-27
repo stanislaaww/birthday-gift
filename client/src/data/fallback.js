@@ -15,7 +15,7 @@ export const fallbackContent = {
     },
     {
       src: '/photos/photo2.jpg',
-      caption: 'днем'
+      caption: 'Днем'
     },
     {
       src: '/photos/photo3.jpg',
